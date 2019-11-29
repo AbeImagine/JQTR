@@ -1,0 +1,15 @@
+{
+  "name": "sapper-svelte-apollo-demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "homepage": "https://github.com/rococosans/sapper-svelte-apollo-demo#readme",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run client\" --names \"⚙️,💻\" --prefix name",
+    "backend": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix client",
+    "test": "echo \"No tests specified\" && exit"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.0"
+  }
+}
